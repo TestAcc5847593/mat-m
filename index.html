@@ -11,18 +11,17 @@ function Pisz(tekst){
  var el = document.getElementById('main');
  el.innerHTML += tekst;
 }
+ 
 function piszKolekcje(min, max,nazFolderu){
  for(i=min; i <= max; i++){
   Pisz('<a href=\"mat/' + nazFolderu + '/' + i + '.pdf\" target=\"_blank\">20' + i + ' </a>');
   Pisz('<a href=\"mat/' + nazFolderu + '/' + i + 'odp.pdf\" target=\"_blank\"> odp</a> <br>');
  }
 }
+ 
 function mainScript(){
  piszKolekcje(21,24,'of')
- for(i=21; i <= 24; i++){
-  Pisz('<a href=\"mat/of/' + i + '.pdf\" target=\"_blank\">20' + i + ' </a>');
-  Pisz('<a href=\"mat/of/' + i + 'odp.pdf\" target=\"_blank\"> odp</a> <br>');
- }
+
 }
 mainScript();
   
