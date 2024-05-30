@@ -9,14 +9,18 @@
 </head>
  
 <body>
- jakiś tekst 20 <br>
+ <div id='main'></div>
  <a href='mat/of/24.pdf' target='_blank'>m24 test</a><br>
  <img src='mat/putin.jpg' width='400'> <br>
  po putinie
   
 </body>
  <script>
-alert('xd')
+function Pisz(tekst){
+ var el = document.getElementById('main');
+ el.innerHTML += tekst;
+}
+Pisz('dzien dobry');
   
  </script>
 </html>
